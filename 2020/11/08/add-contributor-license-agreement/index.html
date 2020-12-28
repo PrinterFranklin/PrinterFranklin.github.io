@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>
+        开源指北：为自己的项目建立贡献者协议 |
+        
+        Netting Sisyphus
+    </title>
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/css/font-awesome.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","path":"search.xml"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.png","favicon":"/images/logo.svg","img_position":"center","left_side_width":"260px","content_max_width":"900px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"...So you have to trust that the dots will somehow connect in your future. You have to trust in something - your gut, destiny, life, karma, whatever."}},"local_search":{"enable":true,"trigger":"auto","unescape":false,"preload":true},"version":"3.0.4"};
+    KEEP.language = {"search":"Search...","prev":"Prev","next":"Next","prev_posts":"Prev posts","next_posts":"Next posts","page":"Page %d","recent_posts":"Recent Posts","share":"Share","powered_by":"Powered by %s","theme":"Theme","rss_feed":"RSS Feed","category":"Category","categories":"Categories","tag":"Tag","tags":"Tags","tagcloud":"Tag Cloud","comment":"Comment","home":"Home","archive":"Archive","archives":"Archives","about":"About","site_uv":"Visitor Count","site_pv":"Totalview","links":"Links","link":"Link","top":"TOP","read_more":"Read more","wordcount":"Words","min2read":"Mins","changelog":"Changelog","copyright":{"author":"Post author","title":"Post title","link":"Post link","create_time":"Create time","license_title":"Copyright Notice","license_content":"All articles in this blog are licensed under %s unless stating additionally."},"ago":{"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days age","week":"%s weeks age","month":"%s months age","year":"%s years age"}};
+  </script>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="page-container">
+
+    
+
+    <header class="page-header">
+        <div class="header-progress"></div>
+    </header>
+
+    <main class="page-main">
+
+        <div class="page-main-content">
+
+            <div class="page-main-content-top">
+                <header class="header-wrapper">
+
+    <div class="header-content">
+        <a class="logo-title" href="/">
+            Netting Sisyphus
+        </a>
+
+        <ul class="menu-list">
+            
+                <li class="menu-item">
+                    <a class=""
+                       href="/"
+                    >
+                        HOME
+                    </a>
+                </li>
+            
+                <li class="menu-item">
+                    <a class=""
+                       href="/archives"
+                    >
+                        ARCHIVES
+                    </a>
+                </li>
+            
+                <li class="menu-item">
+                    <a class=""
+                       href="/categories"
+                    >
+                        CATEGORIES
+                    </a>
+                </li>
+            
+                <li class="menu-item">
+                    <a class=""
+                       href="/tags"
+                    >
+                        TAGS
+                    </a>
+                </li>
+            
+                <li class="menu-item">
+                    <a class=""
+                       href="/links"
+                    >
+                        LINKS
+                    </a>
+                </li>
+            
+                <li class="menu-item">
+                    <a class=""
+                       href="/about"
+                    >
+                        ABOUT
+                    </a>
+                </li>
+            
+        </ul>
+
+        <div class="menu-bar">
+            <div class="menu-bar-middle"></div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">LINKS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+            </div>
+
+            <div class="page-main-content-middle">
+
+                <main class="main-content normal-code-theme">
+
+                    
+                        <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">开源指北：为自己的项目建立贡献者协议</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.png">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span>Anakin</span>
+                        <span class="level">Lv1</span>
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-calendar"></i> 2020-11-08 15:26:14
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E5%BC%80%E6%BA%90%E6%96%87%E5%8C%96/">开源文化</a>
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%BC%80%E6%BA%90/">开源</a>
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i> <span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p>本文已作为 Gitee 社区《开源指北》的一部分对外开源，原文链接位于：<a class="link"   target="_blank" rel="noopener" href="https://gitee.com/oschina/gitee-osguide" >https://gitee.com/oschina/gitee-osguide<i class="fas fa-external-link-alt"></i></a> 。</p>
+<h2 id="什么是贡献者协议"><a href="#什么是贡献者协议" class="headerlink" title="什么是贡献者协议"></a>什么是贡献者协议</h2><p>启动自己的开源项目后，除了为项目选择一个合适的开源许可证（License），一份规范的贡献者协议通常也是不可或缺的。事实上，几乎所有大型的开源项目，诸如 Apache、Kubernetes 等，都要求在提交 PR 前签署贡献者协议。</p>
+<p>你可能会问，License 不够用吗？为什么还要加一个贡献者协议呢？这就得从著作权说起了。</p>
+<p>从原理上说，软件开源开放的是软件的<strong>使用权</strong>，而非<strong>著作权</strong>（版权）。开源许可证指明了用户在某些限制下使用软件及其源代码，如果用户违反了开源许可证，最终依然要回归到著作权的法律框架下解决争端。</p>
+<p>那么著作权是怎么来的呢？根据《著作权法》的规定，著作权是作品完成时自然产生的，归作品的作者所有。对于大多数开源项目来说，著作权并不属于单一的人或实体，而是所有贡献者都有一份。可以想象，如果发生开源软件侵权，著作权的分散将给维权带来很多麻烦。另外，假如项目所有者想要更换或调整开源许可证，会因为并不持有全部的著作权受到阻碍，还可能由于著作权的原因与贡献者产生潜在的争议。</p>
+<p>贡献者协议就是为了解决这些问题而生的：</p>
+<ol>
+<li><p>将代码的版权统一授予项目所有者，方便项目的管理和维权。</p>
+</li>
+<li><p>提供保证和免责声明，避免潜在的法律风险。</p>
+<blockquote>
+<p>设想这样一种场景，Alice 为项目贡献了实际为 Bob 所有的代码，并且未获得 Bob 的授权，但 Alice 在提交代码前签署了贡献者协议，保证代码来自于个人原创，此时法律责任完全由 Alice 承担。</p>
+</blockquote>
+</li>
+</ol>
+<p>具体到形式上，贡献者协议又可以分为 CLA 和 DCO，两者在不同场景下各有优劣。</p>
+<h2 id="CLA-vs-DCO"><a href="#CLA-vs-DCO" class="headerlink" title="CLA vs DCO"></a>CLA vs DCO</h2><h3 id="CLA"><a href="#CLA" class="headerlink" title="CLA"></a>CLA</h3><p><strong>CLA</strong>，全称 Contributor License Agreement（贡献者许可协议），简单来说就是项目接收贡献者提交的 PR 之前，需要贡献者签署的一份协议，协议只需签署一次，对该贡献者的所有提交都生效。</p>
+<p>CLA 由项目所有方<strong>自行定义</strong>，在细节上有大大小小的差异，没有统一的标准，但大致包括以下内容：</p>
+<ul>
+<li>关于签署该 CLA 的<strong>主体</strong>和<strong>贡献</strong>的定义；</li>
+<li>授予著作权和专利许可给拥有该软件知识产权的公司或组织；</li>
+<li>签署者保证依法有权授予上述许可；</li>
+<li>所有的贡献内容均为个人<strong>版权所有</strong>，或经过版权所有者的授权，对于贡献内容造成的侵权并不知情；</li>
+<li>贡献内容的<strong>免责声明</strong>；</li>
+<li>说明贡献者提交非原创作品应该采用的方式；</li>
+<li>保证在获悉任何方面不准确的事实或情况之时通知签约方。</li>
+</ul>
+<p>有些项目的 CLA 会相对宽松，例如 Apache 基金会的 CLA 允许贡献者持有著作权，只要求授予项目方分发展示复制等权利。</p>
+<h3 id="DCO"><a href="#DCO" class="headerlink" title="DCO"></a>DCO</h3><p><strong>DCO</strong>，全称 Developer Certificate of Origin（开发者原创证书），最初是在 Linux kernel 项目中引入的，由 Linux 基金会于 2004 年制定。</p>
+<p>相比于 CLA，DCO 是一种更轻量化的机制，它最大的优点是<strong>标准化</strong>，不要求开发者阅读冗长的法律条文，只需在提交的时候签署邮件地址即可。DCO 被很好地集成在了 kernel 的版本控制软件 git 里，因此只要在 <code>git commit</code> 的时候添加 <code>-s</code> 选项，<code>Signed-off-by</code> 就能很简单地添加到 commit log 中。</p>
+<p>DCO 目前最新版本是 1.1，内容如下：</p>
+<blockquote>
+<ol>
+<li>该贡献全部或部分由我创建，我有权根据文件中指明的开源许可提交；或者：</li>
+<li>该贡献是基于以前的工作，这些工作基于适当的开源许可，无论这些工作全部还是部分由我完成，我有权根据相同的开源许可证（除非我被允许根据不同的许可证提交）提交修改后的工作；或者：</li>
+<li>该贡献由1、2、或 3 认证的其他人直接提供给我，而我没有对其进行修改。</li>
+<li>我理解并同意该项目和贡献是公开的，并且该贡献的记录（包括我随之提交的所有个人信息，包括我的签字）将无限期保留，并且可以与本项目或涉及的开源许可保持一致或者重新分配。</li>
+</ol>
+</blockquote>
+<p>协议的核心在于“原创性确认”，也就是让补丁的提交者确认提交内容是自己创作或者经过别人授权的，并且充分了解项目方会如何使用自己的代码。</p>
+<p>正是由于 DCO 保留了 CLA 中的核心免责信息，并且具有轻量化特点，越来越多的开源项目，比如 Chef 和 GitLab 选择从 CLA 切换到了 DCO。</p>
+<h3 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h3><p>两种协议的对比如下：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>CLA</th>
+<th>DCO</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>签署方式</td>
+<td>一次性签署</td>
+<td>每次提交时追加 Signed-off-by 信息</td>
+</tr>
+<tr>
+<td>法律责任</td>
+<td>明确法律义务</td>
+<td>无声明，用来限制提交者遵守开源 LICENSE</td>
+</tr>
+<tr>
+<td>自定义</td>
+<td>公司或组织可自行定义</td>
+<td>不可自定义，内容固定</td>
+</tr>
+<tr>
+<td>社区属性</td>
+<td>弱</td>
+<td>强</td>
+</tr>
+<tr>
+<td>公司属性</td>
+<td>强，可签署公司级别的 CLA</td>
+<td>弱</td>
+</tr>
+<tr>
+<td>使用案例</td>
+<td>Google、CNCF、Alibaba、openEuler</td>
+<td>GitLab、Chef、Apache SkyWalking</td>
+</tr>
+</tbody></table>
+<p>说了这么多，究竟应该选择 CLA 还是 DCO 呢？这取决于项目本身和社区的需求，通常来说：</p>
+<ul>
+<li>如果你想尽量减少对开发者贡献代码的阻碍，看重社区内的自由合作，那么 DCO 更合适。</li>
+<li>如果你的开源项目可能有公司间的合作或者要贡献给基金会，注重防范法律风险，那么使用 CLA 更加合适。</li>
+</ul>
+<h2 id="编写自己的-CLA"><a href="#编写自己的-CLA" class="headerlink" title="编写自己的 CLA"></a>编写自己的 CLA</h2><p>下面以 RT-Thread 社区 CLA 为例，介绍如何编写一份规范的 CLA，如果没有特殊的需求，读者也可以直接照搬。</p>
+<p>开头首先明确 CLA 的生效条件和作用范围：</p>
+<blockquote>
+<p>通过签署贡献协议（“本协议”），签署的“贡献者”同意接受“本协议”并受“本协议”约束。“本协议”适用于“贡献者”提交给 xxx 社区 （“社区”）的全部项目（后称“项目”）的“贡献”，无论“贡献”是在签署日期之前，签署时还是之后提供。</p>
+</blockquote>
+<p>接下来对协议中用到的名词进行准确定义：</p>
+<blockquote>
+<p><strong>“贡献”</strong>是指受版权法保护的，由“贡献者”有意“提交”以包含在“项目”所分发软件中任何作品。“提交”是指以电子，口头或书面交流的任何形式送给“社区”管理方或其代表，包括但不限于“社区”管理方为管理的为讨论和改进项目所提供的电子邮件列表上的交流，源代码控制系统以及由“社区”管理方或其代表管理的问题跟踪系统，但不包括由“我”明确标记或以书面形式指定为“非贡献”的交流。</p>
+<p><strong>“贡献者”或“我”</strong>是指下面签名栏中标明的个人或法人实体。对于法人实体，做出“贡献”的实体以及由该实体控制、受其控制或受其共同控制的所有其他实体均被视为“贡献者”。就本定义而言，“控制”是指有受控方或共同受控方至少50%直接或间接的投票权，资金或其他有价证券。</p>
+</blockquote>
+<p>核心部分是贡献者对社区授予版权和专利许可：</p>
+<blockquote>
+<p>“贡献者”授予“社区”管理方和由“项目”所分发的软件的每个接收者一个永久性的、全球性的、免费的、非独占的、不可撤销的、有分许可权的版权许可，供其复制、使用、修改、分发其“贡献”，不论修改与否。</p>
+<p>“贡献者”授予“社区”管理方和由“项目”所分发的软件的每个接收者一个永久性的、全球性的、免费的、非独占的、不可撤销的、有分许可权的专利许可，供其制造、委托制造、使用、许诺销售、销售、进口其“贡献”或以其他方式转移其“贡献”。前述专利许可仅限于“贡献者”现在或将来拥有或控制的其“贡献”本身或其“贡献”与“提交”“贡献”时所针对的“项目”软件的结合而将必然会侵犯的专利权利要求，不包括仅因“贡献者”之外的人修改“贡献”或其他结合而将必然会侵犯到的专利权利要求。如由“项目”所分发的软件实际采用的许可证对软件接收者的专利授权有进一步限制规定的，如限制接收者对“贡献”或前述软件发起专利诉讼或其他维权等，则对前述软件接收者的专利授权以具体项目许可证的对应规定为准。</p>
+</blockquote>
+<p>最后是贡献者的保证和免责声明：</p>
+<blockquote>
+<p>“贡献者”保证“我”是“贡献”的版权所有者，或者“我”经版权所有者授权进行“贡献”，并且“我”在法律上授予“本协议”规定的权利。</p>
+<p>“贡献者”保证“我”不知晓“我”的任何“贡献”已经侵犯或将侵犯任何第三方的版权，商标，专利或其他知识产权。</p>
+<p>除“本协议”明确约定外，“贡献者”的  “贡献”在提供时不带任何明示或默示的担保，“贡献者”或版权所有者不对任何人因使用“项目”所分发的软件或其中的“贡献”而引发的任何直接或间接损失承担责任，不论因何种原因导致或者基于何种法律理论，即使其曾被建议有此种损失的可能性。</p>
+</blockquote>
+<p>到此为止，一份完整的 CLA 就大功告成啦，通常协议下方还会有表单用于收集贡献者的姓名和邮箱，以便在提交 PR 时检查贡献者是否签署了 CLA。</p>
+<p>很多 FOSS 项目（Free and Open-Source Software）在开始时并没有要求贡献者签署  CLA，但伴随着项目参与者越来越多，会有签署 CLA 以及更改 License 的需求，此时可能面临一些困难，例如无法找到过去的贡献者重新签署  CLA。为了避免被起诉的风险，通常会采用两种策略：</p>
+<ol>
+<li>重写受影响的部分代码，适用于受影响代码较少的情形。</li>
+<li>保持现有的状态直到所有贡献者签署 CLA，适用于受影响代码较多的情形。</li>
+</ol>
+<p>所以如果你已经决定要开源自己的代码，并且想要把它做成一个参与者众的大型项目，建议提前考虑好是否要添加贡献者协议，因为越晚考虑的成本可能会越高。</p>
+<h2 id="题外话：CLA-面面观"><a href="#题外话：CLA-面面观" class="headerlink" title="题外话：CLA 面面观"></a>题外话：CLA 面面观</h2><p>虽然 CLA 在开源软件中得到了广泛运用，但关于它的争议一直没有停歇过。</p>
+<p>反对者认为 CLA 与开源运动的初衷相违背，多数情况下签署 CLA 即意味着<strong>放弃自己劳动成果的版权</strong>（或者说著作权），一旦版权转移给了项目方，项目方就有权在未来更换其他更严格的许可证，甚至直接将项目闭源，这显然是贡献者不愿意看到的。</p>
+<p>除此以外，CLA 的<strong>非标准性</strong>可能导致贡献者和项目方处于地位不对等的状态，贡献者需要在参与每个项目时都仔细检查一遍条款，以避免自己的劳动成果被恶意利用，事实上在繁琐的协议条文面前，拥有成熟法务团队的大公司总是处于主导地位，这与尽可能降低门槛、崇尚自由合作的开源精神不符。</p>
+<p>当然也不乏支持 CLA 的声音，理由之一是，CLA 的存在是一种应对法务风险的防御机制，很多大型企业基于开源软件构建产品并对客户提供服务，如果有开源社区的贡献者起诉他们侵犯专利或版权，败诉不仅意味着巨额的赔偿，还可能导致业务中断损失客户。</p>
+<p>CLA 让更多大型企业和组织愿意参与开源社区并成为其中的中坚力量，企业在构建产品的过程中反哺开源社区，提高开源软件的代码质量，可以说没有大型企业和组织，也就没有丰富和高质量的开源软件生态，从这点上来说，CLA 也是一种“存在即合理”。</p>
+<p>对此，你怎么看呢？</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a class="link"   target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Contributor_License_Agreement" >https://en.wikipedia.org/wiki/Contributor_License_Agreement<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://jimmysong.io/blog/open-source-cla/" >https://jimmysong.io/blog/open-source-cla/<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://github.com/kubernetes/community/issues/2649" >https://github.com/kubernetes/community/issues/2649<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://opensource.com/article/18/3/cla-vs-dco-whats-difference" >https://opensource.com/article/18/3/cla-vs-dco-whats-difference<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="http://opensource.guide/zh-hans/" >http://opensource.guide/zh-hans/<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://www.finnegan.com/en/insights/articles/what-you-should-know-about-contributor-license-agreements-in-open-source-projects.html" >https://www.finnegan.com/en/insights/articles/what-you-should-know-about-contributor-license-agreements-in-open-source-projects.html<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://opensource.stackexchange.com/questions/666/what-can-you-do-if-you-cant-track-down-all-old-contributors-to-sign-a-cla?rq=1" >https://opensource.stackexchange.com/questions/666/what-can-you-do-if-you-cant-track-down-all-old-contributors-to-sign-a-cla?rq=1<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://opensource.com/article/19/2/cla-problems" >https://opensource.com/article/19/2/cla-problems<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://www.rt-thread.org/cla/" >https://www.rt-thread.org/cla/<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="http://disksing.com/cla-and-dco/" >http://disksing.com/cla-and-dco/<i class="fas fa-external-link-alt"></i></a></p>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：开源指北：为自己的项目建立贡献者协议</li>
+        <li>Post author：Anakin</li>
+        <li>Create time：2020-11-08 15:26:14</li>
+        <li>
+            Post link：https://nettingsisyphus.tech/2020/11/08/add-contributor-license-agreement/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2020/11/08/using-hexo/"
+                        >
+                            <span class="left arrow-icon flex-center" >
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Ubuntu 环境下基于 Hexo 搭建个人博客</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+            </div>
+        
+
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    
+        
+    <div class="valine-container">
+        <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+        <div id="vcomments"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                appId: 'EdH3R7zeshRIik63kCBrX3jY-gzGzoHsz',
+                appKey: '3zUwu4mcgMKrMm863goMjeqK',
+                meta: 'nick,mail,link'.split(','),
+                avatar: 'wavatar',
+                enableQQ: true,
+                placeholder: '',
+                lang: 'en'.toLowerCase()
+            });
+
+
+            // Valine 评论列表增加"博主"标识
+            const getValineDomTimer = setInterval(() => {
+                const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                if (vcards.length > 0) {
+
+                    let author = 'Anakin';
+                    if (author) {
+                        author = author.toLocaleLowerCase();
+                    }
+
+                    for (let vcard of vcards) {
+                        const vnick = vcard.querySelector('.vhead .vnick');
+                        if (vnick.innerHTML.toLocaleLowerCase() === author) {
+                            vcard.classList.add('author');
+                        }
+                    }
+                    clearInterval(getValineDomTimer);
+                } else {
+                    clearInterval(getValineDomTimer);
+                }
+            }, 2000);
+        </script>
+    </div>
+
+
+    
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                    
+                </main>
+
+            </div>
+
+            <div class="page-main-content-bottom">
+                <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span> -
+            
+            2020 <i class="fas fa-heart icon-animate"></i> <a href="/">Anakin</a>
+        </div>
+        
+            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a> | Theme <a class="theme-version" target="_blank"></a>
+        </div>
+    </div>
+</footer>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="sidebar-tools">
+        <div class="tools-container">
+    <ul class="tools-list">
+        
+            <li class="search popup-trigger">
+                <i class="fas fa-search"></i>
+            </li>
+        
+
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+    </ul>
+</div>
+
+    </div>
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+            <li class="tools-item rss flex-center">
+                <a class="flex-center" href="/atom.xml" target="_blank"><i class="fas fa-rss"></i></a>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-top flex-center">
+            <i class="fas fa-arrow-up"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="tools-ul-1">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+    </ul>
+</div>
+
+    </div>
+
+    <!-- page aside -->
+    <aside class="page-aside">
+        
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%B4%A1%E7%8C%AE%E8%80%85%E5%8D%8F%E8%AE%AE"><span class="nav-number">1.</span> <span class="nav-text">什么是贡献者协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CLA-vs-DCO"><span class="nav-number">2.</span> <span class="nav-text">CLA vs DCO</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CLA"><span class="nav-number">2.1.</span> <span class="nav-text">CLA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DCO"><span class="nav-number">2.2.</span> <span class="nav-text">DCO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%AF%94"><span class="nav-number">2.3.</span> <span class="nav-text">对比</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E5%86%99%E8%87%AA%E5%B7%B1%E7%9A%84-CLA"><span class="nav-number">3.</span> <span class="nav-text">编写自己的 CLA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E5%A4%96%E8%AF%9D%EF%BC%9ACLA-%E9%9D%A2%E9%9D%A2%E8%A7%82"><span class="nav-number">4.</span> <span class="nav-text">题外话：CLA 面面观</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">5.</span> <span class="nav-text">参考链接</span></a></li></ol>
+    </div>
+</div>
+        
+    </aside>
+
+    <!-- image viewer -->
+    <div class="image-viewer-container">
+    <div class="img-box">
+        <img src="">
+    </div>
+</div>
+
+
+</div>
+
+
+
+    <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-icon">
+            <i class="fas fa-search"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/dark-light-toggle.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/local-search.js"></script>
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/left-side-toggle.js"></script>
+
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/code-copy.js"></script>
+    
+
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/toc.js"></script>
+    
+
+
+</body>
+</html>
